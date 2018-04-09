@@ -29,7 +29,7 @@ if ! which wget >&/dev/null; then
   fi
 fi
 
-for f in make gcc automake libtool autoconf patch grep bzip2 gzip git; do
+for f in make gcc automake libtoolize autoconf patch grep bzip2 gzip git; do
   if ! which $f >&/dev/null; then
     echo "$0: $f is not installed."
     add_packages $f $f $f
